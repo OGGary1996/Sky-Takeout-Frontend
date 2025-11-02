@@ -62,7 +62,7 @@
               :class="{
                 'disabled-text': scope.row.username === 'admin',
                 blueBug: scope.row.status == '0',
-                delBut: scope.row.status != '0',
+                delBut: scope.row.status != '0'
               }"
               @click="statusHandle(scope.row)"
             >

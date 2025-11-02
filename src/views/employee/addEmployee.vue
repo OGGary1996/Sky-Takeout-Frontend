@@ -235,7 +235,7 @@ export default class extends Vue {
   }
 
   private submitForm(formName: any, st: any) {
-    ;(this.$refs[formName] as any).validate((valid: any) => {
+    (this.$refs[formName] as any).validate((valid: any) => {
       if (valid) {
         if (this.actionType === 'add') {
           const params = {
